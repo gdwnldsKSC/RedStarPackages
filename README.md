@@ -31,4 +31,6 @@ file-devel and python-magic can install.
 Elfutils is another package that wants to have circular dependancies  
 so we go anead and rpm -i --force --nodeps elfutils-* to ensure all  
 packages are consistent and same version Even though currently we have  
-the same exact version rebuilt that is included in RS3 anyway.  
+the same exact version rebuilt that is included in RS3 anyway. Eventually  
+we will want to fix this with a higher version so that we can just upgrade  
+straight from an online repo.  
