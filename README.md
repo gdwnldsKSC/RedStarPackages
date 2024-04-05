@@ -24,6 +24,13 @@ Development/Tools/make-3.82 - FC14 version
 Development/Tools/elfutils-0.149 - FC14 version (already in RS3, rebuilt for -devel)  
 
 # Install notes
+
+Currently, there's some unresolved file conflicts, Eventually  
+we will want to fix this with a higher version so that we can just upgrade  
+straight from an online repo. For now we can force installations to get into  
+a better 'known' sane state with these packages when upgrade time comes  
+until we can get into such an online repo upgrade capability.  
+
 File is built using standard fedora files, so we must due to conflicts  
 use rpm -i --force for file-libs RPM, then rpm -U file will work. After  
 file-devel and python-magic can install.   
@@ -31,6 +38,4 @@ file-devel and python-magic can install.
 Elfutils is another package that wants to have circular dependancies  
 so we go anead and rpm -i --force --nodeps elfutils-* to ensure all  
 packages are consistent and same version Even though currently we have  
-the same exact version rebuilt that is included in RS3 anyway. Eventually  
-we will want to fix this with a higher version so that we can just upgrade  
-straight from an online repo.  
+the same exact version rebuilt that is included in RS3 anyway.  
