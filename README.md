@@ -18,6 +18,7 @@ for yourself, as red star did *not* include SRPMs.
 Applications/Internet/wget-1.14   
 Applications/File-4.26  
 Development/Tools/help2man-1.36.4 - FC10 version
+Applications/System/asciidoc-8.2.5 - FC10 version
 
 # Install notes
 File is built using standard fedora files, so we must due to conflicts  
