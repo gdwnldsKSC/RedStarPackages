@@ -29,7 +29,7 @@ Development/Tools/make-3.82 - FC14 version / RS 3.0 default version -
 Development/Tools/elfutils-0.149 - FC14 version (Included, rebuilt for -devel)  
 Development/Tools/zlib-1.2.5 - FC14 version  / RS 3.0 default version - 1.2.3-23   
 Applications/Archiving/sharutils-4.10 - FC14 version
-
+Development/System/redhat-rpm-config-9.0.3 - FC10 version / RS 3.0 default version - 8.0.40-1
 
 
 # Install notes
