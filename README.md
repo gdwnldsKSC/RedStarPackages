@@ -22,6 +22,9 @@ Applications/System/asciidoc-8.2.5 - FC10 version
 Applications/File/xz-4.999.9-0.2beta.20100401git - FC14 version (already in RS3, rebuilt for -devel)  
 Development/Tools/make-3.82 - FC14 version   
 Development/Tools/elfutils-0.149 - FC14 version (already in RS3, rebuilt for -devel)  
+Development/Tools/zlib-1.2.5 - FC14 version  
+
+
 
 # Install notes
 
@@ -30,6 +33,8 @@ we will want to fix this with a higher version so that we can just upgrade
 straight from an online repo. For now we can force installations to get into  
 a better 'known' sane state with these packages when upgrade time comes  
 until we can get into such an online repo upgrade capability.  
+
+Any package without notes will just install via rpm -i or rpm -U as appropriate
 
 File is built using standard fedora files, so we must due to conflicts  
 use rpm -i --force for file-libs RPM, then rpm -U file will work. After  
