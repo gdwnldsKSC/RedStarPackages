@@ -30,7 +30,7 @@ Development/Tools/elfutils-0.149 - FC14 version (Included, rebuilt for -devel)
 Development/Tools/zlib-1.2.5 - FC14 version  / RS 3.0 default version - 1.2.3-23   
 Applications/Archiving/sharutils-4.10 - FC14 version  
 Development/System/redhat-rpm-config-9.0.3 - FC10 version / RS 3.0 default version - 8.0.40-1 (you don't need this until all RPM upgrade packages are available)  
-System Environment/Shells/bash-3.2 - FC10 Version / RS 3.0 default version - 3.1.7(1)  
+System Environment/Shells/bash-3.2.39(1) - FC10 Version / RS 3.0 default version - 3.1.7(1)  
 System Environment/Libraries/ncurses-5.7 - FC11 Version / RS 3.0 default version - 5.6   
 Application/System/rpmreaper-0.1.5 - FC10 Version  
 System Environment/Libraries/libtermcap-2.0.8-47 - FC8 Version / RS 3.0 default version - 2.0.8-45  
@@ -47,8 +47,12 @@ until we can get into such an online repo upgrade capability.  From the
 looks of things so far, I believe that will be when we can start tackling  
 FC15 packages and have OpenSSL to a version past 0.9.8 which will involve a  
 lot of rebuilds and broken packages initially.  
-
-Any package without notes will just install via rpm -i or rpm -U as appropriate
+  
+Any package without notes will just install via rpm -i or rpm -U as appropriate  
+  
+libtermcap and termcap should NOT be needed anymore, but because of RS3.0's very  
+interesting mix of packages and versions .... we have to work around it until we   
+get to a unified base of some type that allows us to remove them.  
 
 File is built using standard fedora files, so we must due to conflicts  
 use rpm -i --force for file-libs RPM, then rpm -U file will work. After  
@@ -63,5 +67,5 @@ For all else, some --force, --nodeps, or --replacefiles may be required as neede
 not noted for now. Some things may be needed to uninstall such as the libtermcap  
 and termcap items in order to allow newer installations such as ncurses to proceed.  
 
-After forcing bash to be installed, I had to re-run rpm -U libtermcap to make it work
+After forcing bash to be installed, I had to re-run rpm -U libtermcap to make it work  
 
