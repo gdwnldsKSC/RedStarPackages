@@ -33,9 +33,9 @@ Development/System/redhat-rpm-config-9.0.3 - FC10 version / RS 3.0 default versi
 System Environment/Shells/bash-3.2.39(1) - FC10 Version / RS 3.0 default version - 3.1.7(1)  
 System Environment/Libraries/ncurses-5.7 - FC11 Version / RS 3.0 default version - 5.6   
 Application/System/rpmreaper-0.1.5 - FC10 Version  
-System Environment/Libraries/libtermcap-2.0.8-47 - FC8 Version / RS 3.0 default version - 2.0.8-45  
-System Environment/Base/termcap-5.5 - FC8 Version / RS 3.0 default version - termcap 5.4  
-
+System Environment/Libraries/libtermcap-2.0.8-47 - FC8 Version / RS 3.0 default version - 2.0.8-45 (we will not need this soon)   
+System Environment/Base/termcap-5.5 - FC8 Version / RS 3.0 default version - termcap 5.4 (we will not need this soon)   
+ 
 
 # Install notes
 
