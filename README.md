@@ -2,9 +2,9 @@
  Red Star OS 3.0 Updates and additional Packages
 
 # Contents
-Packages built (currently with GCC 6.2.0) for Red Star OS 3.0 to  
-update system components and provide additional packages not   
-included in the base system.  
+Packages built (currently with a mix of GCC 4.4.0 - 6.2.0) for  
+Red Star OS 3.0 to update system components and provide additional  
+packages not included in the base system.   
 
 Red Star OS 3.0 is loosely based on Fedora 11, so we can reuse a   
 lot of the upstream spec files for RPM building and configuration  
