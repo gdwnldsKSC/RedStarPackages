@@ -28,8 +28,13 @@ Applications/File/xz-4.999.9-0.2beta.20100401git - FC14 version (Included, rebui
 Development/Tools/make-3.82 - FC14 version / RS 3.0 default version - 
 Development/Tools/elfutils-0.149 - FC14 version (Included, rebuilt for -devel)  
 Development/Tools/zlib-1.2.5 - FC14 version  / RS 3.0 default version - 1.2.3-23   
-Applications/Archiving/sharutils-4.10 - FC14 version
-Development/System/redhat-rpm-config-9.0.3 - FC10 version / RS 3.0 default version - 8.0.40-1
+Applications/Archiving/sharutils-4.10 - FC14 version  
+Development/System/redhat-rpm-config-9.0.3 - FC10 version / RS 3.0 default version - 8.0.40-1 (you don't need this until all RPM upgrade packages are available)  
+System Environment/Shells/bash-3.2 - FC10 Version / RS 3.0 default version - 3.1.7(1)  
+System Environment/Libraries/ncurses-5.7 - FC11 Version / RS 3.0 default version - 5.6   
+Application/System/rpmreaper-0.1.5 - FC10 Version  
+System Environment/Libraries/libtermcap-2.0.8-47 - FC8 Version / RS 3.0 default version - 2.0.8-45  
+System Environment/Base/termcap-5.5 - FC8 Version / RS 3.0 default version - termcap 5.4  
 
 
 # Install notes
@@ -53,3 +58,10 @@ Elfutils is another package that wants to have circular dependancies
 so we go anead and rpm -i --force --nodeps elfutils-* to ensure all  
 packages are consistent and same version Even though currently we have  
 the same exact version rebuilt that is included in RS3 anyway.  
+
+For all else, some --force, --nodeps, or --replacefiles may be required as needed if   
+not noted for now. Some things may be needed to uninstall such as the libtermcap  
+and termcap items in order to allow newer installations such as ncurses to proceed.  
+
+After forcing bash to be installed, I had to re-run rpm -U libtermcap to make it work
+
