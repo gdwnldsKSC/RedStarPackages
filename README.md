@@ -21,7 +21,7 @@ components.
 
 # Package List  
 Applications/Internet/wget-1.14 - hand built before working RPM build process   
-Applications/File/file-4.26 - FC10 version / RS 3.0 default version -    
+Applications/File/file-4.26 - FC10 version / RS 3.0 default version -  4.16  
 Development/Tools/help2man-1.36.4 - FC10 version  
 Applications/System/asciidoc-8.2.5 - FC10 version  
 Applications/File/xz-4.999.9-0.2beta.20100401git - FC14 version (Included, rebuilt for -devel)  
@@ -35,7 +35,7 @@ System Environment/Libraries/ncurses-5.7 - FC11 Version / RS 3.0 default version
 Application/System/rpmreaper-0.1.5 - FC10 Version  
 System Environment/Libraries/libtermcap-2.0.8-47 - FC8 Version / RS 3.0 default version - 2.0.8-45 (we will not need this soon)   
 System Environment/Base/termcap-5.5 - FC8 Version / RS 3.0 default version - termcap 5.4 (we will not need this soon)   
-bc-1.06-34 - FC11 version
+Application/Engineering/bc-1.06-34 - FC11 version - not included with RS 3.0
  
 
 # Install notes
