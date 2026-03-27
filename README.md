@@ -35,6 +35,7 @@ System Environment/Libraries/ncurses-5.7 - FC11 Version / RS 3.0 default version
 Application/System/rpmreaper-0.1.5 - FC10 Version  
 System Environment/Libraries/libtermcap-2.0.8-47 - FC8 Version / RS 3.0 default version - 2.0.8-45 (we will not need this soon)   
 System Environment/Base/termcap-5.5 - FC8 Version / RS 3.0 default version - termcap 5.4 (we will not need this soon)   
+bc-1.06-34 - FC11 version
  
 
 # Install notes
