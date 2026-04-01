@@ -40,6 +40,7 @@ Development/Libraries/glibc-2.10.1-2 - FC11 version / RS3 default version also 2
 mpfr-2.4.1-1 - FC11 version / RS3 default version is 2.3.0-1 (rebuild for -devel package)
 sqlite-3.6.22-1 - FC13 version / RS3 default version is 3.6.12-3 (rebuild for > 3.6.16 req)
 autoconf213-2.13-21 - FC15 version / RS3 doesn't have it, needed for xulrunner build 
+libnotify-0.4.5-4 - FC13 version / RS3 default version is 0.4.5-4 (rebuild for -devel)
 
 in progress: xulrunner-1.9.2.3-1 - FC13 version / RS3 default version is  1.9.1-2.5 (rebuild for -devel package)
 
