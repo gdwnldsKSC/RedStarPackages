@@ -44,10 +44,10 @@ libnotify-0.4.5-4 - FC13 version / RS3 default version is 0.4.5-4 (rebuild for -
 nspr-4.8.4-2 - FC13 version / RS3 default version is 4.7.3-5 (rebuild for newer xulrunner)
 nss-3.12.4-14 - FC12 version / RS3 default version is 3.12.3-4 (rebuild for newer devel for xulrunner, same for all nss components) 
 nss-softokn-3.12.4-10 - FC12 version / RS3 default version is (nss-softokn-freebl-3.12.3-4 - 3 pkgs created, only freebl installed)
+nss-util-3.12.4-8 - FC12 version / RS3 doesn't have it
+sharutils-4.10-1 - FC13 version / RS3 doesn't have it
 
-
-in progress: xulrunner-1.9.2.3-1 - FC13 version / RS3 default version is  1.9.1-2.5 (rebuild for -devel package)
-
+in progress: xulrunner-1.9.1.4-1 - FC12 version / RS3 default version is  1.9.1-2.5 (rebuild for -devel package)
 
 # Install notes
 
