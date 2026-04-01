@@ -42,6 +42,9 @@ sqlite-3.6.22-1 - FC13 version / RS3 default version is 3.6.12-3 (rebuild for > 
 autoconf213-2.13-21 - FC15 version / RS3 doesn't have it, needed for xulrunner build 
 libnotify-0.4.5-4 - FC13 version / RS3 default version is 0.4.5-4 (rebuild for -devel)
 nspr-4.8.4-2 - FC13 version / RS3 default version is 4.7.3-5 (rebuild for newer xulrunner)
+nss-3.12.4-14 - FC12 version / RS3 default version is 3.12.3-4 (rebuild for newer devel for xulrunner, same for all nss components) 
+nss-softokn-3.12.4-10 - FC12 version / RS3 default version is (nss-softokn-freebl-3.12.3-4 - 3 pkgs created, only freebl installed)
+
 
 in progress: xulrunner-1.9.2.3-1 - FC13 version / RS3 default version is  1.9.1-2.5 (rebuild for -devel package)
 
