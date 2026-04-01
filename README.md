@@ -25,7 +25,7 @@ Applications/File/file-4.26 - FC10 version / RS 3.0 default version -  4.16
 Development/Tools/help2man-1.36.4 - FC10 version  
 Applications/System/asciidoc-8.2.5 - FC10 version  
 Applications/File/xz-4.999.9-0.2beta.20100401git - FC14 version (Included, rebuilt for -devel)  
-Development/Tools/make-3.82 - FC14 version / RS 3.0 default version - 
+Development/Tools/make-3.82 - FC14 version / RS 3.0 default version - 3.80
 Development/Tools/elfutils-0.149 - FC14 version (Included, rebuilt for -devel)  
 Development/Tools/zlib-1.2.5 - FC14 version  / RS 3.0 default version - 1.2.3-23   
 Applications/Archiving/sharutils-4.10 - FC14 version  
@@ -36,6 +36,7 @@ Application/System/rpmreaper-0.1.5 - FC10 Version
 System Environment/Libraries/libtermcap-2.0.8-47 - FC8 Version / RS 3.0 default version - 2.0.8-45 (we will not need this soon)   
 System Environment/Base/termcap-5.5 - FC8 Version / RS 3.0 default version - termcap 5.4 (we will not need this soon)   
 Application/Engineering/bc-1.06-34 - FC11 version - not included with RS 3.0
+Development/Libraries/glibc-2.10.1-2 - FC11 version / RS3 default version also 2.10.1-2 - for now, rebuild for glibc-static and other bits needed to build other tools.
  
 
 # Install notes
@@ -68,5 +69,4 @@ For all else, some --force, --nodeps, or --replacefiles may be required as neede
 not noted for now. Some things may be needed to uninstall such as the libtermcap  
 and termcap items in order to allow newer installations such as ncurses to proceed.  
 
-After forcing bash to be installed, I had to re-run rpm -U libtermcap to make it work  
-
+After forcing bash to be installed, I had to re-run rpm -U libtermcap to make it work
