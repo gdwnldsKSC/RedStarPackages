@@ -35,27 +35,27 @@ System Environment/Libraries/ncurses-5.7 - FC11 Version / RS 3.0 default version
 Application/System/rpmreaper-0.1.5 - FC10 Version  
 System Environment/Libraries/libtermcap-2.0.8-47 - FC8 Version / RS 3.0 default version - 2.0.8-45 (we will not need this soon)   
 System Environment/Base/termcap-5.5 - FC8 Version / RS 3.0 default version - termcap 5.4 (we will not need this soon)   
-Application/Engineering/bc-1.06-34 - FC11 version - not included with RS 3.0
-Development/Libraries/glibc-2.10.1-2 - FC11 version / RS3 default version also 2.10.1-2 - for now, rebuild for glibc-static and other bits needed to build other tools.
-mpfr-2.4.1-1 - FC11 version / RS3 default version is 2.3.0-1 (rebuild for -devel package)
-sqlite-3.6.22-1 - FC13 version / RS3 default version is 3.6.12-3 (rebuild for > 3.6.16 req)
-autoconf213-2.13-21 - FC15 version / RS3 doesn't have it, needed for xulrunner build 
-libnotify-0.4.5-4 - FC13 version / RS3 default version is 0.4.5-4 (rebuild for -devel)
-nspr-4.8.4-2 - FC13 version / RS3 default version is 4.7.3-5 (rebuild for newer xulrunner)
-nss-3.12.4-14 - FC12 version / RS3 default version is 3.12.3-4 (rebuild for newer devel for xulrunner, same for all nss components) 
-nss-softokn-3.12.4-10 - FC12 version / RS3 default version is (nss-softokn-freebl-3.12.3-4 - 3 pkgs created, only freebl installed)
-nss-util-3.12.4-8 - FC12 version / RS3 doesn't have it
-sharutils-4.10-1 - FC13 version / RS3 doesn't have it
-xulrunner-1.9.1-0.20.beta4 MODIFIED to 1.9.1-2.5 - FC11 version / RS3 default version is 1.9.1-2.5 which doesn't seem to exist anywhere
-compat-db-4.6.21-5 - FC10 version / RS3 doesn't have it (compat-db.spec edited to enable building on RS3 initially)
-lua-5.1.4-1 - FC10 version / RS3 doesn't have it
-rpm-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2
-rpm-libs-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2
-rpm-devel-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2
-rpm-build-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2
-rpm-python-magicrpm-apidocs-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2
-rpm-debuginfo-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2
-
+Application/Engineering/bc-1.06-34 - FC11 version - not included with RS 3.0  
+Development/Libraries/glibc-2.10.1-2 - FC11 version / RS3 default version also 2.10.1-2 - for now, rebuild for glibc-static and other bits needed to build other tools.  
+mpfr-2.4.1-1 - FC11 version / RS3 default version is 2.3.0-1 (rebuild for -devel package)  
+sqlite-3.6.22-1 - FC13 version / RS3 default version is 3.6.12-3 (rebuild for > 3.6.16 req)  
+autoconf213-2.13-21 - FC15 version / RS3 doesn't have it, needed for xulrunner build   
+libnotify-0.4.5-4 - FC13 version / RS3 default version is 0.4.5-4 (rebuild for -devel)   
+nspr-4.8.4-2 - FC13 version / RS3 default version is 4.7.3-5 (rebuild for newer xulrunner)  
+nss-3.12.4-14 - FC12 version / RS3 default version is 3.12.3-4 (rebuild for newer devel for xulrunner, same for all nss components)   
+nss-softokn-3.12.4-10 - FC12 version / RS3 default version is (nss-softokn-freebl-3.12.3-4 - 3 pkgs created, only freebl installed)  
+nss-util-3.12.4-8 - FC12 version / RS3 doesn't have it  
+sharutils-4.10-1 - FC13 version / RS3 doesn't have it  
+xulrunner-1.9.1-0.20.beta4 MODIFIED to 1.9.1-2.5 - FC11 version / RS3 default version is 1.9.1-2.5 which doesn't seem to exist anywhere  
+compat-db-4.6.21-5 - FC10 version / RS3 doesn't have it (compat-db.spec edited to enable building on RS3 initially)  
+lua-5.1.4-1 - FC10 version / RS3 doesn't have it  
+rpm-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2  
+rpm-libs-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2  
+rpm-devel-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2  
+rpm-build-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2  
+rpm-python-magicrpm-apidocs-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2  
+rpm-debuginfo-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2  
+  
 # RPM UPGRADE PROCEDURE
 RPM 4.4.2 is pretty old, so is 4.6.0, but it is a safe path and supports more packages......
 This should be done first on any RedStar 3.0 system, 
