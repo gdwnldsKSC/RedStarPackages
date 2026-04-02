@@ -47,6 +47,7 @@ nss-softokn-3.12.4-10 - FC12 version / RS3 default version is (nss-softokn-freeb
 nss-util-3.12.4-8 - FC12 version / RS3 doesn't have it
 sharutils-4.10-1 - FC13 version / RS3 doesn't have it
 xulrunner-1.9.1-0.20.beta4 MODIFIED to 1.9.1-2.5 - FC11 version / RS3 default version is 1.9.1-2.5 which doesn't seem to exist anywhere
+compat-db-4.6.21-5 - FC10 version / RS3 doesn't have it (compat-db.spec edited to enable building on RS3 initially)
 lua-5.1.4-1 - FC10 version / RS3 doesn't have it
 
 
