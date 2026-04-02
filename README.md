@@ -56,41 +56,41 @@ rpm-build-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2
 rpm-python-magicrpm-apidocs-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2  
 rpm-debuginfo-4.6.0.rc1.7 - FC10 version / RS3 uses FC9 version 4.4.2  
   
-# RPM UPGRADE PROCEDURE
-RPM 4.4.2 is pretty old, so is 4.6.0, but it is a safe path and supports more packages......
-This should be done first on any RedStar 3.0 system, 
-
-## Step 1 - RPM DB Backup
-cp -a /var/lib/rpm /var/lib/rpm.pre-rpm46-backup
-rpm -qa > /root/packages.pre-rpm46.txt
-
-## Step 2 - RPM LIBs backup
-cp -a /var/lib/rpm /var/lib/rpm.pre-rpm46-backup
-
-rpm -Uvh --nodeps \
-  rpm-libs-4.6.0-0.rc1.7.i386.rpm \
-  rpm-4.6.0-0.rc1.7.i386.rpm \
-  rpm-build-4.6.0-0.rc1.7.i386.rpm \
-  rpm-python-4.6.0-0.rc1.7.i386.rpm
+# RPM UPGRADE PROCEDURE  
+RPM 4.4.2 is pretty old, so is 4.6.0, but it is a safe path and supports more packages......  
+This should be done first on any RedStar 3.0 system,   
   
-## Step 3 - Oneshot upgrade
-
-rpm -Uvh --nodeps \
-  rpm-libs-4.6.0-0.rc1.7.i386.rpm \
-  rpm-4.6.0-0.rc1.7.i386.rpm \
-  rpm-build-4.6.0-0.rc1.7.i386.rpm \
-  rpm-python-4.6.0-0.rc1.7.i386.rpm
-
-## Step 4 - restore RPM 4.4 libs
-
-cp -av /root/rpm44-compat/librpm-4.4.so* /usr/lib/
-cp -av /root/rpm44-compat/librpmdb-4.4.so* /usr/lib/
-cp -av /root/rpm44-compat/librpmio-4.4.so* /usr/lib/
-cp -av /root/rpm44-compat/librpmbuild-4.4.so* /usr/lib/ 2>/dev/null || true
-ldconfig
-
-This keeps at least the macOS style system profiler thing working. 
-
+## Step 1 - RPM DB Backup  
+cp -a /var/lib/rpm /var/lib/rpm.pre-rpm46-backup  
+rpm -qa > /root/packages.pre-rpm46.txt  
+   
+## Step 2 - RPM LIBs backup
+cp -a /var/lib/rpm /var/lib/rpm.pre-rpm46-backup  
+  
+rpm -Uvh --nodeps \  
+  rpm-libs-4.6.0-0.rc1.7.i386.rpm \  
+  rpm-4.6.0-0.rc1.7.i386.rpm \  
+  rpm-build-4.6.0-0.rc1.7.i386.rpm \  
+  rpm-python-4.6.0-0.rc1.7.i386.rpm  
+    
+## Step 3 - Oneshot upgrade  
+  
+rpm -Uvh --nodeps \  
+  rpm-libs-4.6.0-0.rc1.7.i386.rpm \  
+  rpm-4.6.0-0.rc1.7.i386.rpm \  
+  rpm-build-4.6.0-0.rc1.7.i386.rpm \  
+  rpm-python-4.6.0-0.rc1.7.i386.rpm  
+  
+## Step 4 - restore RPM 4.4 libs   
+  
+cp -av /root/rpm44-compat/librpm-4.4.so* /usr/lib/  
+cp -av /root/rpm44-compat/librpmdb-4.4.so* /usr/lib/  
+cp -av /root/rpm44-compat/librpmio-4.4.so* /usr/lib/  
+cp -av /root/rpm44-compat/librpmbuild-4.4.so* /usr/lib/ 2>/dev/null || true  
+ldconfig  
+  
+This keeps at least the macOS style system profiler thing working.   
+  
 # Install notes
 
 Currently, there's some unresolved file conflicts, Eventually  
