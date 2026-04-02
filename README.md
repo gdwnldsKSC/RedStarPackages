@@ -64,7 +64,7 @@ This should be done first on any RedStar 3.0 system,
 cp -a /var/lib/rpm /var/lib/rpm.pre-rpm46-backup  
 rpm -qa > /root/packages.pre-rpm46.txt  
    
-## Step 2 - RPM LIBs backup
+## Step 2 - RPM LIBs backup  
 cp -a /var/lib/rpm /var/lib/rpm.pre-rpm46-backup  
   
 rpm -Uvh --nodeps \  
