@@ -46,8 +46,7 @@ nss-3.12.4-14 - FC12 version / RS3 default version is 3.12.3-4 (rebuild for newe
 nss-softokn-3.12.4-10 - FC12 version / RS3 default version is (nss-softokn-freebl-3.12.3-4 - 3 pkgs created, only freebl installed)
 nss-util-3.12.4-8 - FC12 version / RS3 doesn't have it
 sharutils-4.10-1 - FC13 version / RS3 doesn't have it
-
-in progress: xulrunner-1.9.1.4-1 - FC12 version / RS3 default version is  1.9.1-2.5 (rebuild for -devel package)
+xulrunner-1.9.1-0.20.beta4 MODIFIED to 1.9.1-2.5 - FC11 version / RS3 default version is 1.9.1-2.5 which doesn't seem to exist anywhere
 
 # Install notes
 
@@ -80,3 +79,10 @@ not noted for now. Some things may be needed to uninstall such as the libtermcap
 and termcap items in order to allow newer installations such as ncurses to proceed.  
 
 After forcing bash to be installed, I had to re-run rpm -U libtermcap to make it work
+
+xulrunner:
+This is version from FC11 that matches the closest to the modified Firefox 3.5 installation.
+It is version 1.9.1-0.20.beta4 (srpm xulrunner-1.9.1-0.20.beta4.fc11.src.rpm)
+It is MODIFIED such that it builds as 1.9.1-2.5 to match the installed version via the SPEC file
+It is further modified to provide gecko-libs 1.9.1-0.25, this matches close enough that satisfies the
+firefox 3.5 dependancy (Naenara browser) keeps working and we now have -devel.
