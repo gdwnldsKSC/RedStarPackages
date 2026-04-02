@@ -86,3 +86,6 @@ It is version 1.9.1-0.20.beta4 (srpm xulrunner-1.9.1-0.20.beta4.fc11.src.rpm)
 It is MODIFIED such that it builds as 1.9.1-2.5 to match the installed version via the SPEC file
 It is further modified to provide gecko-libs 1.9.1-0.25, this matches close enough that satisfies the
 firefox 3.5 dependancy (Naenara browser) keeps working and we now have -devel.
+### Note: there are some glitches with Naenara - it doesn't show in the top bar anymore, but still works as a browser. These will need to be figured out later.
+### You do NOT NEED THIS PACKAGE If you are keeping the default browser, I just needed -devel for other builds.
+
